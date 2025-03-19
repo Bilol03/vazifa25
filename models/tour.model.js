@@ -22,3 +22,6 @@ let tourSchema = new mongoose.Schema({
         ref: 'guides'
     }
 })
+
+let Tour = mongoose.model("tours", tourSchema)
+export default Tour
