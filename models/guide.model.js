@@ -16,4 +16,4 @@ GuideSchema.virtual('tours', {
 })
 
 let guides = mongoose.model('guides', GuideSchema)
-module.exports = guides
+export default guides
