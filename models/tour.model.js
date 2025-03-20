@@ -17,10 +17,10 @@ let tourSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    relationship: {
-        type: [mongoose.Schema.Types.ObjectId],
+    guides: [{
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'guides'
-    }
+    }]
 })
 
 let Tour = mongoose.model("tours", tourSchema)

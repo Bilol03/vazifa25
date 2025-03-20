@@ -8,7 +8,7 @@ let postGuide = async(req, res) => {
 }
 
 let getGuides = async(req, res) => {
-    let data = await guideSchema.find()
+    let data = await guideSchema.find().populate('tours')
     res.send(data)
 }
 
